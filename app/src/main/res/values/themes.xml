@@ -6,4 +6,12 @@
     </style>
 
     <style name="Theme.EyeLyze" parent="Base.Theme.EyeLyze" />
+
+    <style name="CustomEditTextStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">@dimen/dimen_10dp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/dimen_10dp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/dimen_10dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/dimen_10dp</item>
+        <item name="boxStrokeColor">@color/grey_300</item>
+    </style>
 </resources>
