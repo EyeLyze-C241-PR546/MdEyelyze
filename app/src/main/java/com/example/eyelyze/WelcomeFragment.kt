@@ -1,26 +1,26 @@
-package com.example.eyelyze.presentation.login
+package com.example.eyelyze
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.eyelyze.R
 import com.example.eyelyze.base.BaseFragment
-import com.example.eyelyze.databinding.FragmentLoginBinding
+import com.example.eyelyze.databinding.FragmentWelcomeBinding
 
-class LoginFragment : BaseFragment<FragmentLoginBinding>() {
+
+class WelcomeFragment : BaseFragment<FragmentWelcomeBinding>() {
 
     override fun getViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): FragmentLoginBinding {
-        return FragmentLoginBinding.inflate(inflater, container, false)
+    ): FragmentWelcomeBinding {
+        return FragmentWelcomeBinding.inflate(inflater, container, false)
     }
 
     override fun initUI() {
-        binding.btnTextRegister.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+        binding.btnStarted.setOnClickListener {
+            findNavController().navigate(R.id.action_welcomeFragment_to_loginFragment)
         }
     }
 
@@ -31,4 +31,5 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>() {
     override fun initObservers() {
 
     }
+
 }

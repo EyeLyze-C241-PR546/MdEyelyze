@@ -1,7 +1,15 @@
 <resources>
     <string name="app_name">EyeLyze</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
+    <string name="action_login">Login</string>
+    <string name="action_register">Register</string>
+    <string name="action_register_desc">"Doesn\'t have an account ? "</string>
+    <string name="logo_content_desc">App Logo</string>
+    <string name="welcome_image">Welcome Image</string>
+    <string name="app_tagline">Analyze Your Eyes, Protect Yout Vision</string>
+    <string name="action_started">Get Started</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="action_login_desc">"Already have an account ?  "</string>
 </resources>
