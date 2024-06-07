@@ -5,4 +5,9 @@
 
     <color name="grey_300">#E0E0E0</color>
     <color name="grey_500">#9E9E9E</color>
+    <color name="dark_grey">#585858</color>
+
+    <color name="colorPrimaryBlue">#13C3F7</color>
+    <color name="colorSecondaryGrey">#9F9F9F</color>
 </resources>
+

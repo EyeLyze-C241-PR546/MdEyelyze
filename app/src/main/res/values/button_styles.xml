@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ActionButton" parent="Widget.Material3.Button">
+        <item name="cornerRadius">@dimen/dimen_8dp</item>
+        <item name="android:textSize">@dimen/font_xxbig</item>
+        <item name="fontFamily">@font/pridi_medium</item>
+    </style>
+
+</resources>
