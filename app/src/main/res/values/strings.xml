@@ -12,4 +12,28 @@
     <string name="hint_name">Name</string>
     <string name="hint_confirm_password">Confirm Password</string>
     <string name="action_login_desc">"Already have an account ?  "</string>
+    <string name="gallery">Gallery</string>
+    <string name="analyze">Analyze</string>
+    <string name="camera">Camera</string>
+    <string name="check_your_eye">Check your Eye!</string>
+    <string name="info_capture">Please select an Eye surface image to be analyzed for eye disease.</string>
+    <string name="result">Hasil Analisis</string>
+    <string name="label_result_scanning">Katarak</string>
+    <string name="label_result_description"> Berdasarkan hasil scanning, mata Anda terindikasi terkena penyakit mata. Berikut adalah beberapa langkah yang dapat Anda ambil untuk menangani kondisi ini:</string>
+    <string name="apa_yang_harus_dilakukan">Apa yang harus dilakukan?</string>
+    <string name="label_suggestion_items">
+        1. Segera konsultasi dengan dokter spesialis mata.
+        \n2. Ikuti resep obat yang diberikan oleh dokter.
+        \n3. Jaga kebersihan mata dengan baik.
+        \n4. Hindari menatap layar terlalu lama untuk mengurangi ketegangan mata.
+        \n5. Jangan menggunakan obat tetes mata tanpa resep dokter.
+        \n2. Ikuti resep obat yang diberikan oleh dokter.
+        \n3. Jaga kebersihan mata dengan baik.
+        \n4. Hindari menatap layar terlalu lama untuk mengurangi ketegangan mata.
+        \n5. Jangan menggunakan obat tetes mata tanpa resep dokter.
+        \n2. Ikuti resep obat yang diberikan oleh dokter.
+        \n3. Jaga kebersihan mata dengan baik.
+        \n4. Hindari menatap layar terlalu lama untuk mengurangi ketegangan mata.
+        \n5. Jangan menggunakan obat tetes mata tanpa resep dokter.
+    </string>
 </resources>
