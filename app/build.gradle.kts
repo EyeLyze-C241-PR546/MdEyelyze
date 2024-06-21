@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id("com.google.devtools.ksp")
     id("kotlin-parcelize")
+    id ("androidx.navigation.safeargs")
 }
 
 android {
@@ -17,6 +18,9 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "DB_NAME", "\"eyelyze-db\"")
+
     }
 
     buildTypes {
@@ -38,6 +42,8 @@ android {
 
     buildFeatures {
         viewBinding = true
+        buildConfig = true
+        mlModelBinding = true
     }
 }
 
@@ -51,6 +57,8 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.viewbinding)
+    implementation(libs.androidx.camera.core)
+    implementation(libs.play.services.tflite.gpu)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -66,7 +74,9 @@ dependencies {
     // room
     implementation("androidx.room:room-runtime:2.6.1")
     ksp("androidx.room:room-compiler:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
 
+    // glide
     implementation("com.github.bumptech.glide:glide:4.16.0")
 
     //  RecyclerView
@@ -82,6 +92,20 @@ dependencies {
     // splashScreen
     implementation("androidx.core:core-splashscreen:1.0.1")
 
+    // tLite
+    implementation("org.tensorflow:tensorflow-lite:2.13.0")
+    implementation("org.tensorflow:tensorflow-lite-support:0.4.3")
+    implementation("org.tensorflow:tensorflow-lite-metadata:0.4.3")
+    implementation("org.tensorflow:tensorflow-lite-task-vision:0.4.4")
+
+    // Camerax
+    implementation(libs.androidx.camera.camera2)
+    implementation(libs.camera.lifecycle)
+    implementation(libs.camera.view)
+
+    //  Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
 
 
 }

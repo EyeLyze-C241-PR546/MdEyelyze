@@ -5,6 +5,9 @@
         <item name="colorPrimary">@color/colorPrimaryBlue</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorSecondary">@color/colorSecondaryGrey</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorOutline">@color/grey_300</item>
+
 
     </style>
 
@@ -22,6 +25,11 @@
         <item name="boxCornerRadiusTopEnd">@dimen/dimen_10dp</item>
         <item name="boxCornerRadiusTopStart">@dimen/dimen_10dp</item>
         <item name="boxStrokeColor">@color/grey_300</item>
-        <item name="hintTextColor">@color/grey_300</item>
+        <item name="android:textColorHint">@color/grey_500</item>
+    </style>
+
+    <style name="RoundedCornerImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
     </style>
 </resources>

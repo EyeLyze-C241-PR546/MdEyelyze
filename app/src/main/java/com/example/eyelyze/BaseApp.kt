@@ -1,6 +1,9 @@
 package com.example.eyelyze
 
 import android.app.Application
+import com.example.eyelyze.di.feature.historyModule
+import com.example.eyelyze.di.feature.viewModelModule
+import com.example.eyelyze.di.localModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -16,7 +19,16 @@ class BaseApp : Application() {
         startKoin {
             androidLogger(Level.NONE)
             androidContext(this@BaseApp)
-            modules()
+            modules(
+                listOf(
+//                    networkModule,
+                    localModule,
+//                    preferenceModule,
+//                    authModule,
+                    historyModule,
+                    viewModelModule
+                )
+            )
         }
     }
 }
